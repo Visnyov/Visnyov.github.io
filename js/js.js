@@ -65,7 +65,7 @@
     
     loadPicture(current);
     // nyil clickelésre beolvassa a képet ha a aktuális kép indexe kisebb a data.hosszúságnál ez meg volt már
-    $('#next').click(() => {
+    $('#kovetkezo').click(() => {
       if (current < dat.length - 1) {
         // léptetjük
         current++;
@@ -74,7 +74,7 @@
       }
     });
     // nyil clickelésre beolvassa a képet ha a aktuális kép indexe nagyobb mint 0 
-    $('#previous').click(() => {
+    $('#elozo').click(() => {
       if (current > 0) {
         current--;
         loadPicture(current);
